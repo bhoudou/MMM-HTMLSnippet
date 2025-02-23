@@ -84,7 +84,8 @@ Every instance of the module need to have a unique "ident" set.
     updateInterval: 3600000, // in milli seconds
     ident: "random2",
     frames : [
-      { src: 'http://127.0.0.1:3000/d-solo/D0UaMxyWz/screen1?orgId=1&panelId=17' },
+      { invert:true,
+        src: 'http://127.0.0.1:3000/d-solo/D0UaMxyWz/screen1?orgId=1&panelId=17' },
       { src: 'http://127.0.0.1:3000/d-solo/D0UaMxyWz/screen1?orgId=1&panelId=20'},
       { src: 'http://127.0.0.1:3000/d-solo/D0UaMxyWz/screen1?orgId=1&panelId=21'},
     ]
