@@ -61,6 +61,11 @@ Module.register("MMM-HTMLSnippet", {
                 wrapper.innerHTML = "<h1>Frame " + i + " has neither src nor html.</h1>";
                 return wrapper;
             }
+            
+            if (this.config.frames[i].invert === true) {
+                iframe.style.filter = "invert(1) hue-rotate(180deg)";
+            }
+            
             wrapper.appendChild(iframe);
         }
         // done
